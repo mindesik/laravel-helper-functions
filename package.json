@@ -2,9 +2,9 @@
   "name": "laravel-helper-functions",
   "version": "1.0.0",
   "description": "Laravel helper functions",
-  "main": "index.js",
+  "main": "lh.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
