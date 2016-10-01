@@ -1,0 +1,14 @@
+box: node
+
+build:
+    steps:
+        - npm-install
+
+publish:
+    steps:
+        - script:
+            name: login
+            code: echo -e "$NPM_USER\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+        - script:
+            name: push
+            code: npm publish
