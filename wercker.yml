@@ -8,7 +8,7 @@ publish:
     steps:
         - script:
             name: login
-            code: echo -e "$NPM_USER\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+            code: echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} >> ~/.npmrc
         - script:
             name: push
             code: npm publish
