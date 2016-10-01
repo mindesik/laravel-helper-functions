@@ -30,4 +30,6 @@ str_plural();
 str_random();
 str_singular();
 str_slug();
+studly_case();
+title_case();
 ```

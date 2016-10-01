@@ -116,6 +116,24 @@ var lh = {
         
         return slug(string, join);
     },
+    
+    studly_case: function (string) {
+        var result = lh.camel_case(string);
+        var result = result.substr(0, 1).toUpperCase() + result.slice(1, result.length);
+        
+        return result;
+    },
+    
+    title_case: function (string) {
+        var words = string.split(' ');
+        var result = [];
+        
+        for (var i in words) {
+            result.push(words[i].substr(0, 1).toUpperCase() + words[i].slice(1, words[i].length));
+        }
+        
+        return result.join(' ');
+    },
 }
 
 module.exports = lh;

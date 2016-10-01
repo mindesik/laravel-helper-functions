@@ -15,3 +15,5 @@ console.log('str_plural:', lh.str_plural('car'));
 console.log('str_random:', lh.str_random(16));
 console.log('str_singular:', lh.str_singular('cars'));
 console.log('str_slug:', lh.str_slug('laravel helper functions'));
+console.log('studly_case:', lh.studly_case('foo bar'));
+console.log('title_case:', lh.title_case('foo bar'));
