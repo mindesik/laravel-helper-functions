@@ -8,6 +8,17 @@ var lh = require('laravel-helper-functions');
 console.log(lh.camelCase('Foo bar Baz'));
 ```
 
-NOTES:
+### Notes
+
 - Not all functions are available
 - All functions are camel case and called from `laravel-helper-functions` object.
+
+### List of available functions:
+
+```javascript
+camelCase();
+snakeCase();
+strLimit();
+strContains();
+
+```
