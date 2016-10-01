@@ -1,6 +1,6 @@
 {
   "name": "laravel-helper-functions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Laravel helper functions",
   "main": "lh.js",
   "scripts": {
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/misterpaladin/laravel-helper-functions/issues"
   },
-  "homepage": "https://github.com/misterpaladin/laravel-helper-functions#readme"
+  "homepage": "https://github.com/misterpaladin/laravel-helper-functions#readme",
+  "dependencies": {
+    "slug": "^0.9.1",
+    "tense": "^1.0.0"
+  }
 }

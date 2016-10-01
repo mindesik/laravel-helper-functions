@@ -11,14 +11,23 @@ console.log(lh.camelCase('Foo bar Baz'));
 ### Notes
 
 - Not all functions are available
-- All functions are camel case and called from `laravel-helper-functions` object.
 
 ### List of available functions:
 
 ```javascript
-camelCase();
-snakeCase();
-strLimit();
-strContains();
-
+// Strings
+camel_case();
+class_basename();
+e();
+ends_with();
+snake_case();
+str_limit();
+starts_with();
+str_contains();
+str_finish();
+str_is();
+str_plural();
+str_random();
+str_singular();
+str_slug();
 ```
