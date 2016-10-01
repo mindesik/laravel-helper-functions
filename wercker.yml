@@ -4,6 +4,12 @@ build:
     steps:
         - npm-install
 
+test:
+    steps:
+        - script:
+            name: test
+            code: npm test
+
 publish:
     steps:
         - script:
