@@ -1,5 +1,5 @@
 var lh = function () {
-    return new LaravelHelpers;
+    //
 }
 
 lh.camelCase = function (text) {
