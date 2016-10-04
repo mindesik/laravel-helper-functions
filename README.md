@@ -1,6 +1,6 @@
 ## Laravel Helper Functions
 
-See [Laravel docs](https://laravel.com/docs/master/helpers#available-methods) for methods.
+Helper functions as nodejs module. See [Laravel docs](https://laravel.com/docs/master/helpers#available-methods) for methods.
 
 ```javascript
 var lh = require('laravel-helper-functions');
