@@ -5,7 +5,7 @@ See [Laravel docs](https://laravel.com/docs/master/helpers#available-methods) fo
 ```javascript
 var lh = require('laravel-helper-functions');
 
-console.log(lh.camelCase('Foo bar Baz'));
+lh.camel_case('Foo bar Baz');
 ```
 
 ### Notes
