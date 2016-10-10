@@ -10,11 +10,18 @@ lh.camel_case('Foo bar Baz');
 
 ### Notes
 
-- Not all functions are available
+- Not all functions are available (only arrays and strings)
 
 ### List of available functions:
 
 ```javascript
+// Arrays
+array_add();
+array_collapse();
+array_divide();
+array_dot();
+
+
 // Strings
 camel_case();
 class_basename();

@@ -9,7 +9,62 @@ var slug = require('slug');
  */
 var lh = {
     
-    // Strings
+    /**
+     * Arrays
+     */
+    array_add: function (array, key, value) {
+        if (typeof array[key] === 'undefined') {
+            array[key] = value;
+        }
+        
+        return array;
+    },
+    
+    array_collapse: function () {
+        var result = [];
+        
+        for (var i in arguments) {
+            for (var ii in arguments[i]) {
+                result.push(arguments[i][ii]);
+            }
+        }
+        
+        return result;
+    },
+    
+    array_divide: function (array) {
+        var keys = [];
+        var values = [];
+        for (var i in array) {
+            keys.push(i);
+            values.push(array[i]);
+        }
+        
+        return [keys, values];
+    },
+    
+    array_dot: function (array) {
+        var result = {};
+        
+        function makeDot(input, prefix) {
+            for (var i in input) {
+                var key = (prefix) ? prefix + '.' + i : i;
+                if (typeof input[i] === 'object') {
+                    makeDot(input[i], key);
+                } else {
+                    result[key] = input[i];
+                }
+            }
+        }
+        
+        makeDot(array);
+        
+        return result;
+    },
+    
+    /**
+     * Strings
+     */
     camel_case: function (string) {
         var words = string.split(' ');
         var result = words.shift().toLowerCase();

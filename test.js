@@ -1,5 +1,11 @@
 var lh = require('./lh');
 
+// Arrays
+console.log('array_add', lh.array_add({foo: 'bar'}, 'bar', 'baz'));
+console.log('array_collapse', lh.array_collapse({foo: 'bar', bar: 'baz'}, {baz: 'bar'}));
+console.log('array_divide', lh.array_divide({foo: 'bar', bar: 'baz'}));
+console.log('array_dot', lh.array_dot({foo: {bar: {baz: 'bar'}}, bar: 'baz'}));
+
 // Strings
 console.log('camel_case:', lh.camel_case('Foo bar Baz'));
 console.log('class_basename:', lh.class_basename('Foo\\Bar\\Baz'));
