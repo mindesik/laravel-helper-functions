@@ -4,7 +4,7 @@
   "description": "Laravel helper functions",
   "main": "lh.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
   "dependencies": {
     "slug": "^0.9.1",
     "tense": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
   }
 }
