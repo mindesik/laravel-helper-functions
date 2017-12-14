@@ -11,7 +11,7 @@ var lh = {
     
     // Strings
     camel_case: function (string) {
-        var words = string.split(' ');
+        var words = string.replace('-',' ').replace('_',' ').split(' ');
         var result = words.shift().toLowerCase();
         
         for (var i in words) {
@@ -34,7 +34,7 @@ var lh = {
     },
 
     snake_case: function (string) {
-        var words = string.split(' ');
+        var words = string.replace('-',' ').replace('_',' ').split(' ');
         var result = [];
         
         for (var i in words) {
@@ -125,7 +125,7 @@ var lh = {
     },
     
     title_case: function (string) {
-        var words = string.split(' ');
+        var words = string.replace('-',' ').replace('_',' ').split(' ');
         var result = [];
         
         for (var i in words) {
